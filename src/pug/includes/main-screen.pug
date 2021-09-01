@@ -1,0 +1,21 @@
+section.main-screen#main-screen
+    .center-wrap
+        .main-screen__provider
+            .main-screen__provider-logo 
+                div
+                    img(src="assets/images/svg/main-screen__logo.svg" alt="")
+            .main-screen__provider-text Listed provider on GOV.UK
+        h1.main-screen__title PCR and Rapid Antigen Testing in Belfast
+        .main-screen__advantages
+            .main-screen__advantages-item
+                img(src='assets/images/svg/advantages-item-icon1.svg' alt='')
+                p.main-screen__advantages-text Fast results from<br> withing 4 hours
+            .main-screen__advantages-item
+                img(src='assets/images/svg/advantages-item-icon2.svg' alt='')
+                p.main-screen__advantages-text Leading reliability and customer satisfaction
+            .main-screen__advantages-item
+                img(src='assets/images/svg/advantages-item-icon3.svg' alt='')
+                p.main-screen__advantages-text UKAS accredited<br> private provider
+        .main-screen__packs
+            +pack({title:'Pre-Departure Fit to Fly',price:'85',item1:'Results within 24 hours',item2:'Best price in Belfast',item3:false,btn:'Book test',src:'assets/images/png/pack-img1.png'})
+            +pack({title:'Rapid Antigen Test',price:'40',item1:'Results within 3 hours',item2:'Best price in Belfast',item3:false,btn:'Book test',src:'assets/images/png/pack-img2.png'})

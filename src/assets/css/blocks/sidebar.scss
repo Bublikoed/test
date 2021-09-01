@@ -1,0 +1,182 @@
+.sidebar {
+    width: 100%;
+    max-width: 40.8rem;
+    padding: 0rem 4.8rem;
+
+    @media screen and (max-width:$large_tablet) {
+        margin: 0rem auto;
+        max-width: 480px;
+        padding: 0 20px;
+    }
+    &__product  {
+        display: flex;
+        width: 100%;
+
+        .img-wrap {
+            margin-right: 2.4rem;
+            max-width: 8.8rem;
+            filter: drop-shadow(2.21192px 2.21192px 11.3361px rgba(0, 0, 0, 0.12));
+            div {
+                padding-bottom: 115.91%;
+            }
+        }
+        &-info {
+            display: flex;
+            flex-direction: column;
+            font-weight: 500;
+            font-size: 1.6rem;
+            line-height: 1.9rem;
+            color: #0D0D0E;
+            padding-top: 1.5rem;
+        }
+        &-title {
+            margin-bottom: 1.5rem;
+        }
+    }
+    .center-wrap {
+        max-width: 100%;
+        margin: 0rem;
+        max-width: 480px;
+
+        @media screen and (max-width:$large_tablet) {
+            position: fixed;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 5;
+        }
+        @media screen and (max-width:$large_mobile) {
+            padding: 0rem;
+        }
+    }
+
+    &--sticky {
+        position: fixed;
+        top: 13rem !important;
+    }
+
+    &--stop {
+        position: relative;
+    }
+
+    >div {
+        &:not(.sidebar--sticky) {
+            width: 100% !important;
+        }
+    }
+
+    &-title {
+        font-weight: 500;
+        font-size: 1.6rem;
+        line-height: 130%;
+        margin-bottom: 0.8rem;
+    }
+
+    &__price {
+        background: #FFFFFF;
+        border-radius: 16px;
+        filter: drop-shadow(0px 12px 24px rgba(0, 0, 0, 0.08));
+        padding: 3.2rem;
+        margin-bottom: 3.2rem;
+
+
+        @media screen and (max-width:$large_tablet) {
+            position: relative;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            margin-bottom: 0rem;
+            border-radius: 16px 16px 0px 0px;
+            display: flex;
+            align-items: center;
+            z-index: 5;
+
+            .sidebar-title {
+                display: none;
+            }
+        }
+
+        
+
+        .btn {
+            width: 100%;
+            justify-content: center;
+            transition: all 0.5s;
+
+            &:hover {
+                opacity: 0.7;
+            }
+
+            svg {
+                margin-left: 1.2rem;
+                fill: #001602;
+            }
+        }
+
+
+
+        &-price {
+            font-weight: bold;
+            font-size: 4rem;
+            line-height: 130%;
+            margin-bottom: 2.8rem;
+
+            @media screen and (max-width:$large_tablet) {
+                margin-bottom: 0rem;
+                margin-right: 3.2rem;
+                font-size: 2.4rem;
+                line-height: 140%;
+            }
+        }
+
+    }
+
+    &__tests {
+        padding: 3.2rem;
+        border-radius: 16px;
+        border: 1px solid rgba(13, 13, 14, 0.16);
+        margin-bottom: 3.2rem;
+
+        @media screen and (max-width:$large_tablet) {
+            margin-bottom: 3.2rem;
+        }
+
+        &-wrap {
+            margin-bottom: 2.4rem;
+        }
+
+        &-wrap:last-child {
+            margin-bottom: 0rem;
+        }
+
+        &-link {
+            display: flex;
+            align-items: center;
+            padding: 1.2rem 1.6rem;
+            margin-bottom: 0.8rem;
+            background: rgba(13, 13, 14, 0.04);
+            border-radius: 12px;
+            background-image: url('~img/svg/btn-icon-gray.svg');
+            background-repeat: no-repeat;
+            background-position: right 2.2rem center;
+            transition: all 0.5s;
+
+            .img-wrap {
+                margin-right: 0.8rem;
+                width: 100%;
+                max-width: 3.2rem;
+            }
+
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+
+        &-link:last-child {
+            margin-bottom: 0rem;
+        }
+    }
+
+}
+
+// test-min-img.png
